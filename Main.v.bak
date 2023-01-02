@@ -1,0 +1,11 @@
+module Main (CLK, SE, SI, Cheio, Senha, CancelaAberta, CancelaFechada, ErroCodigo, Pare, Display, DigitoDisplay);
+	
+	input CLK, SE, SI, Cheio;
+	input [3:0] Senha;
+	
+	
+	output CancelaAberta, CancelaFechada, ErroCodigo, Pare;
+	output [6:0] Display;
+	output [3:0] DigitoDisplay;
+	
+endmodule 

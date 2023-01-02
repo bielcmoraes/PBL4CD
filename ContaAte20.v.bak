@@ -1,0 +1,18 @@
+module ContaAte20 (Inicio, Time);
+
+	input Inicio; // Sinal de clock da placa (50 MHz)
+	output reg Time; // output clock after dividing the input clock by divisor
+	reg[27:0] counter=28'd0;
+	parameter DIVISOR = 28'd1000000000;
+	
+	//A frequencia de saída (TIME) é igual a frequencia de entrada (Inicio) dividida pelo
+	//divisor (DIVISOR). Como a frequência de entrada é igual a 50 MHz e o divisor tem valor
+	//de 1 bilhão o período de saída é de 20 segundos.
+	always @(posedge Inicio)
+	begin
+	 counter <= counter + 28'd1;
+	 if(counter>=(DIVISOR-1))
+		counter <= 28'd0;
+		Time <= (counter<DIVISOR/2)?1'b1:1'b0;
+	end
+endmodule 

@@ -1,0 +1,377 @@
+$comment
+	File created using the following command:
+		vcd file PBL4.msim.vcd -direction
+$end
+$date
+	Sat Dec 17 00:52:28 2022
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module ControlaFluxo_vlg_vec_tst $end
+$var reg 1 ! Clock $end
+$var reg 1 " Contador $end
+$var reg 1 # ErroSenha $end
+$var reg 1 $ Full $end
+$var reg 1 % SE $end
+$var reg 1 & SI $end
+$var reg 1 ' Senha $end
+$var reg 1 ( reset $end
+$var wire 1 ) Bloqueado $end
+$var wire 1 * Liberado $end
+$var wire 1 + Pare $end
+$var wire 1 , SenhaErro $end
+$var wire 1 - state [3] $end
+$var wire 1 . state [2] $end
+$var wire 1 / state [1] $end
+$var wire 1 0 state [0] $end
+
+$scope module i1 $end
+$var wire 1 1 gnd $end
+$var wire 1 2 vcc $end
+$var wire 1 3 unknown $end
+$var tri1 1 4 devclrn $end
+$var tri1 1 5 devpor $end
+$var tri1 1 6 devoe $end
+$var wire 1 7 Clock~combout $end
+$var wire 1 8 ErroSenha~combout $end
+$var wire 1 9 Senha~combout $end
+$var wire 1 : Full~combout $end
+$var wire 1 ; Mux2~0_combout $end
+$var wire 1 < SI~combout $end
+$var wire 1 = SE~combout $end
+$var wire 1 > Mux3~0_combout $end
+$var wire 1 ? Mux2~1_combout $end
+$var wire 1 @ reset~combout $end
+$var wire 1 A state[1]~reg0_regout $end
+$var wire 1 B SenhaErro~0_combout $end
+$var wire 1 C Mux3~2_combout $end
+$var wire 1 D Mux3~1 $end
+$var wire 1 E state[0]~reg0_regout $end
+$var wire 1 F Contador~combout $end
+$var wire 1 G Mux4~1_combout $end
+$var wire 1 H state[2]~reg0_regout $end
+$var wire 1 I SenhaErro~2_combout $end
+$var wire 1 J SenhaErro~1_combout $end
+$var wire 1 K SenhaErro~reg0_regout $end
+$var wire 1 L Liberado~reg0_regout $end
+$var wire 1 M Pare~reg0_regout $end
+$var wire 1 N Bloqueado~reg0_regout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+0&
+0'
+0(
+x)
+x*
+x+
+x,
+x0
+x/
+x.
+0-
+01
+12
+x3
+14
+15
+16
+x7
+x8
+x9
+x:
+x;
+x<
+x=
+x>
+x?
+x@
+0A
+xB
+xC
+xD
+0E
+xF
+xG
+0H
+xI
+xJ
+0K
+0L
+0M
+0N
+$end
+#1132
+08
+09
+0:
+0<
+0=
+0F
+#1140
+0>
+#1163
+07
+0@
+#1527
+0D
+#1528
+1B
+#1547
+0;
+#1548
+0I
+#1645
+0?
+#1660
+0J
+#3090
+0*
+#3096
+0)
+#4189
+0+
+#4190
+0,
+#4310
+0.
+#4334
+0/
+#5094
+00
+#5796
+0G
+#6078
+0C
+#20000
+1!
+1%
+#21132
+1=
+#21163
+17
+#26078
+1C
+#40000
+0!
+#41163
+07
+#60000
+1!
+#61163
+17
+#63724
+1E
+#65272
+1I
+#68818
+10
+#70000
+1"
+#71132
+1F
+#80000
+0!
+#81163
+07
+#100000
+1!
+#101163
+17
+#120000
+0!
+#121163
+07
+#140000
+1!
+#141163
+17
+#160000
+0!
+#161163
+07
+#180000
+1!
+#181163
+17
+#190000
+0%
+#191132
+0=
+#200000
+0!
+#201163
+07
+#220000
+1!
+#221163
+17
+#240000
+0!
+#241163
+07
+#260000
+1!
+#261163
+17
+#270000
+0"
+#271132
+0F
+#280000
+0!
+#281163
+07
+#300000
+1!
+#301163
+17
+#320000
+0!
+#321163
+07
+#340000
+1!
+#341163
+17
+#360000
+0!
+#361163
+07
+#380000
+1!
+#381163
+17
+#400000
+0!
+#401163
+07
+#420000
+1!
+#421163
+17
+#440000
+0!
+#441163
+07
+#460000
+1!
+#461163
+17
+#480000
+0!
+#481163
+07
+#500000
+1!
+#501163
+17
+#520000
+0!
+#521163
+07
+#540000
+1!
+#541163
+17
+#560000
+0!
+#561163
+07
+#580000
+1!
+#581163
+17
+#600000
+0!
+#601163
+07
+#620000
+1!
+#621163
+17
+#640000
+0!
+#641163
+07
+#660000
+1!
+#661163
+17
+#680000
+0!
+#681163
+07
+#700000
+1!
+#701163
+17
+#720000
+0!
+#721163
+07
+#740000
+1!
+#741163
+17
+#760000
+0!
+#761163
+07
+#780000
+1!
+#781163
+17
+#800000
+0!
+#801163
+07
+#820000
+1!
+#821163
+17
+#840000
+0!
+#841163
+07
+#860000
+1!
+#861163
+17
+#880000
+0!
+#881163
+07
+#900000
+1!
+#901163
+17
+#920000
+0!
+#921163
+07
+#940000
+1!
+#941163
+17
+#960000
+0!
+#961163
+07
+#980000
+1!
+#981163
+17
+#1000000

@@ -1,0 +1,26 @@
+//Case do display de 7 segmentos 
+
+module CaseDisplay7Segmentos (Livre, Pare, Erro, Clock, ClockMetade, Output);
+	
+	input Clock, ClockMetade, Livre, Pare, Erro;
+	output reg [2:0] Output;
+	
+	always @(*) begin
+		
+		if (Livre)
+		begin
+			case ({Clock, ClockMetade})
+			
+			2'b00: Output <= 3'b000; //F
+			2'b01: Output <= 3'b001; //r
+			2'b10: Output <= 3'b010; //E
+			2'b11: Output <= 3'b010; //E
+		
+			endcase
+		end
+		
+		
+	end
+
+
+endmodule

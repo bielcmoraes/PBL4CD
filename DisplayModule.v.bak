@@ -1,0 +1,18 @@
+//Multiplexador display
+
+module DisplayModule (Clock, Livre, Pare, Erro, Output, DigitoAceso);
+	
+	input Clock, Livre, Pare, Erro;
+	wire ClockMetade;
+	wire [3:0] valorMux;
+	output [6:0] Output;
+	output [3:0] DigitoAceso;
+	
+	FlipFlopT divideMetade (.T(1'b1), .Clock(Clock), .Q(ClockMetade), .Qn());
+	
+	CaseDisplay7Segmentos case1 (Livre, Pare, Erro, Clock, ClockMetade, Output);
+	
+	DEMUXDisplay7Segmentos Demux1 (.Clock(Clock), .ClockMetade(ClockMetade), .Output(DigitoAceso));
+	
+	Decodificador4Bits decodificador1 (.value(valorMux), .convert(Output));
+endmodule 

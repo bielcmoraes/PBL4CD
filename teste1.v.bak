@@ -1,0 +1,11 @@
+module teste1 (CLK, SE, SI, Full, Contador, Senha, reset);
+	
+	input CLK, SE, SI, Full, Contador, Senha, reset;
+	output Liberado, Pare, Bloqueado;
+	
+
+	ControlaFluxo (.CLK(CLK), .SE(CLK), .SI(SI), .Full(Full), .Contador(Contador), .Senha(Senha), .reset(reset), .Liberado(Liberado), .Pare(Pare), .Bloqueado(Bloqueado));
+
+
+
+endmodule 
